@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f9f9f9;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+    }
+    .thankyou-box {
+      text-align: center;
+      padding: 2rem 3rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease;
+      max-width: 400px;
+    }
+    .thankyou-box h1 { 
+      color: #28a745; 
+      margin-bottom: 1rem;
+    }
+    .thankyou-box p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .thankyou-box button {
+      padding: 0.6rem 1.4rem;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .thankyou-box button:hover {
+      background: #0056b3;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-box">
+    <h1>✅ Thank You!</h1>
+    <p>Your form was submitted successfully.</p>
+    <!-- Go Back button takes user to Contact section -->
+    <button onclick="window.location.href='index.html#contact'">Go Back</button>
+  </div>
+</body>
+</html>
